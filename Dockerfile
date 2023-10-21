@@ -2,7 +2,7 @@ FROM node:14 as buildImage
 LABEL author="samuel"
 LABEL content="Docker image for eye server"
 WORKDIR /usr/src/app
-COPY ./ /client
+COPY ./ ./client
 RUN cd client && npm install
 RUN cd client && npm build 
 
