@@ -12,7 +12,7 @@ app.use(cors({origin: true}))
 connect;
 app.use(express.json()) //allows parsing incoming request to json
 app.use(blogRouter)
-const port = process.env.PORT || 5000;
+const port  = process.env.PORT  || 5000;
 
 app.listen(port, () => {
     console.log('listening on port ' + port)
