@@ -3,8 +3,8 @@ LABEL author="samuel"
 LABEL content="Docker image for eye server"
 WORKDIR /usr/src/app
 COPY ./ ./client
-RUN cd client && npm install
-RUN cd client && npm build 
+RUN cd client && yarn install
+RUN cd client && yarn build
 
 
 FROM node:14
